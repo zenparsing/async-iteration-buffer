@@ -1,0 +1,22 @@
+{
+  "name": "async-iteration-buffer",
+  "version": "0.1.0",
+  "description": "Buffering for async iterators",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zenparsing/async-iteration-buffer.git"
+  },
+  "keywords": [
+    "iterator",
+    "async iterator"
+  ],
+  "main": "./AsyncIterationBuffer.js",
+  "homepage": "https://github.com/zenparsing/async-iteration-buffer",
+  "scripts": {
+    "test": "eslint src/** && node test.js"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  }
+}
