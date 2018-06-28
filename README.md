@@ -44,3 +44,7 @@ Pushes an exception into the iteration buffer.
 ### buffer.return(value)
 
 Pushes a `done` result into the iteration buffer.
+
+### AsyncIterationBuffer.of(...values)
+
+Creates a buffer pre-filled with the specified values

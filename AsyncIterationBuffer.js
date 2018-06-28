@@ -68,7 +68,6 @@ class AsyncIterationBuffer {
     for (let i = 0; i < args.length; ++i) {
       buffer.next(args[i]);
     }
-    buffer.return();
     return buffer;
   }
 

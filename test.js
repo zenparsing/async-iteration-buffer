@@ -28,7 +28,6 @@ async function main() {
     assert.deepEqual(await iter.next(), { value: 2, done: false });
     assert.deepEqual(await iter.next(), { value: 3, done: false });
     assert.deepEqual(await iter.next(), { value: 4, done: false });
-    assert.deepEqual(await iter.next(), { value: undefined, done: true });
   }
 
   console.log('OK');
