@@ -1,4 +1,4 @@
-const AsyncIterationBuffer = require('./');
+const { AsyncIterationBuffer } = require('./');
 const assert = require('assert');
 
 async function main() {
@@ -10,7 +10,6 @@ async function main() {
     buffer.return();
 
     let iter = buffer[Symbol.asyncIterator]();
-    let result;
 
     assert.deepEqual(await iter.next(), { value: 1, done: false });
     assert.deepEqual(await iter.next(), { value: 2, done: false });
@@ -22,7 +21,6 @@ async function main() {
     let buffer = AsyncIterationBuffer.of(1, 2, 3, 4);
 
     let iter = buffer[Symbol.asyncIterator]();
-    let result;
 
     assert.deepEqual(await iter.next(), { value: 1, done: false });
     assert.deepEqual(await iter.next(), { value: 2, done: false });

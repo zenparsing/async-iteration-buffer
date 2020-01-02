@@ -73,4 +73,4 @@ class AsyncIterationBuffer {
 
 }
 
-module.exports = AsyncIterationBuffer;
+module.exports = { AsyncIterationBuffer };

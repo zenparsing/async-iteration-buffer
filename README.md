@@ -3,7 +3,7 @@
 A buffering tool for async iteration.
 
 ```js
-import AsyncIterationBuffer from 'async-iteration-buffer';
+import { AsyncIterationBuffer } from 'async-iteration-buffer';
 
 async function main() {
   let buffer = new AsyncIterationBuffer();
