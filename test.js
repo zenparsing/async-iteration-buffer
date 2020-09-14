@@ -1,5 +1,5 @@
-const { AsyncIterationBuffer } = require('./');
-const assert = require('assert');
+import { AsyncIterationBuffer } from './async-iteration-buffer.js';
+import * as assert from 'assert';
 
 async function main() {
   {
@@ -27,8 +27,6 @@ async function main() {
     assert.deepEqual(await iter.next(), { value: 3, done: false });
     assert.deepEqual(await iter.next(), { value: 4, done: false });
   }
-
-  console.log('OK');
 }
 
 main();
